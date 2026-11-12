@@ -1,17 +1,17 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() throws IOException {
-    GestionProductos g = new GestionProductos();
-    Producto producto = new Producto(
-            1,
-            "Disco duro",
-            86.99,
-            true,
-            LocalDate.now(),
-            "Almacenamiento"
-    );
+import java.io.IOException;
+import java.time.LocalDate;
+import java.util.Scanner;
 
-    g.agregarProductos(producto);
-    g.mostrarProductos();
-
-}
+ void main() throws IOException {
+     GestionProductos g = new GestionProductos();
+     Producto producto = new Producto(
+             1,
+             "Disco duro",
+             86.99,
+             true,
+             LocalDate.now(),
+             "Almacenamiento"
+     );
+     g.agregarProductos(producto);
+     g.mostrarProductos();
+ }
